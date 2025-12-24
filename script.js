@@ -21,6 +21,9 @@ if (currentTheme === 'light') {
     icon.classList.replace('fa-moon', 'fa-sun');
 };
 
+const igprofilepic = "https://res.cloudinary.com/joabarm/image/upload/v1766595898/ig-profile-pic_py0qtw.jpg";
+document.getElementById("igprofilepic").src = igprofilepic;
+
 const url_whatsapp = "https://wa.me/56942314811/?text=Hola%20%21%20Me%20gustar%C3%ADa%20agendar%20una%20hora.";
 document.getElementById("link-whatsapp").href = url_whatsapp;
 
@@ -28,8 +31,8 @@ const url_instagram = "https://www.instagram.com/carlosbenitezdentista?igsh=MTY0
 document.querySelectorAll(".ig-link").forEach(el => {el.href = url_instagram});
 
 const igpics = [
-    "./assets/igpic1.png",
-    "./assets/igpic2.png",
-    "./assets/igpic3.png",
+    "https://res.cloudinary.com/joabarm/image/upload/w_480,f_auto/v1766595902/igpic1_vcjlb2.png",
+    "https://res.cloudinary.com/joabarm/image/upload/w_480,f_auto/v1766595897/igpic2_m7tavy.png",
+    "https://res.cloudinary.com/joabarm/image/upload/w_480,f_auto/v1766595901/igpic3_tnj0ts.png",
 ]
 document.querySelectorAll(".igpics").forEach((img, ind) => {img.src = igpics[ind]});
